@@ -7,6 +7,8 @@ int main()
   Window window("title", 800, 600);
   glClearColor(0.6f, 0.2, 1.0f, 1.0);
 
+  std::cout << "hello world!" << std::endl;
+
   while (!window.Closed())
     {
       window.Clear();
@@ -14,6 +16,6 @@ int main()
       window.Update();
     }
 
-  system("PAUSE");
   return 0;
+  system("return");
 }
