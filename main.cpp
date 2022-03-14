@@ -14,5 +14,6 @@ int main()
       window.Update();
     }
 
+  system("PAUSE");
   return 0;
 }
