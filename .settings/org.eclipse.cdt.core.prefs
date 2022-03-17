@@ -15,7 +15,7 @@ environment/project/cdt.managedbuild.config.gnu.mingw.exe.debug.295855918/MSYS_H
 environment/project/cdt.managedbuild.config.gnu.mingw.exe.debug.295855918/MSYS_HOME/value=D\:\\msys64
 environment/project/cdt.managedbuild.config.gnu.mingw.exe.debug.295855918/PATH/delimiter=;
 environment/project/cdt.managedbuild.config.gnu.mingw.exe.debug.295855918/PATH/operation=replace
-environment/project/cdt.managedbuild.config.gnu.mingw.exe.debug.295855918/PATH/value=${MINGW_HOME}\\bin;${MSYS_HOME}\\bin;${MSYS_HOME}\\usr\\bin;D\:/dev/eclipse//plugins/org.eclipse.justj.openjdk.hotspot.jre.full.win32.x86_64_17.0.1.v20211116-1657/jre/bin/server;D\:/dev/eclipse//plugins/org.eclipse.justj.openjdk.hotspot.jre.full.win32.x86_64_17.0.1.v20211116-1657/jre/bin;C\:\\Windows\\system32;C\:\\Windows;C\:\\Windows\\System32\\Wbem;C\:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;C\:\\Windows\\System32\\OpenSSH\\;;D\:\\dev\\eclipse
+environment/project/cdt.managedbuild.config.gnu.mingw.exe.debug.295855918/PATH/value=${MINGW_HOME}\\bin;${MSYS_HOME}\\bin;${MSYS_HOME}\\usr\\bin;D\:/dev/eclipse//plugins/org.eclipse.justj.openjdk.hotspot.jre.full.win32.x86_64_17.0.1.v20211116-1657/jre/bin/server;D\:/dev/eclipse//plugins/org.eclipse.justj.openjdk.hotspot.jre.full.win32.x86_64_17.0.1.v20211116-1657/jre/bin;C\:\\Windows\\system32;C\:\\Windows;C\:\\Windows\\System32\\Wbem;C\:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;C\:\\Windows\\System32\\OpenSSH\\;D\:\\dev\\eclipse
 environment/project/cdt.managedbuild.config.gnu.mingw.exe.debug.295855918/PWD/delimiter=;
 environment/project/cdt.managedbuild.config.gnu.mingw.exe.debug.295855918/PWD/operation=replace
 environment/project/cdt.managedbuild.config.gnu.mingw.exe.debug.295855918/PWD/value=D\:\\eclipse-workspace\\engine\\Debug

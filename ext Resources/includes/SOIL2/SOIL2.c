@@ -1756,7 +1756,7 @@ unsigned int
 		}
 
 		/*	are any MIPmaps desired?	*/
-		if( flags & SOIL_FLAG_MIPMAPS || flags & SOIL_FLAG_GL_MIPMAPS )
+		if( 'flags & SOIL_FLAG_MIPMAPS' || 'flags & SOIL_FLAG_GL_MIPMAPS' )
 		{
 			createMipmaps( NULL != img ? img : data, iwidth, iheight, channels, flags, opengl_texture_target, internal_texture_format, original_texture_format, DXT_mode );
 

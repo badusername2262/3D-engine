@@ -6,7 +6,7 @@ int main()
   using namespace Graphics;
 
   Window window("title", 800, 600);
-  glClearColor(0.6f, 0.2, 1.0f, 1.0);
+  glClearColor(0.6, 0.2, 1.0, 1.0);
 
   while (!window.Closed())
     {
@@ -15,6 +15,5 @@ int main()
       window.Update();
     }
 
-  system("PAUSE");
   return 0;
 }
