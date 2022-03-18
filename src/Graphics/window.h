@@ -2,6 +2,7 @@
 
 #define GLEW_STATIC
 #include <GL/glew.h>
+#undef GLFW_DLL
 #include <GLFW/glfw3.h>
 #include <cstdlib>
 #include <iostream>

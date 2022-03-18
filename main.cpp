@@ -1,5 +1,5 @@
 #include "src/Graphics/window.h"
-#include "GLM/glm.hpp"
+#include "src/Graphics/view_matrices.h"
 
 int main()
 {
@@ -8,7 +8,6 @@ int main()
   Window window("title", 800, 600);
   glClearColor(0.6, 0.2, 1.0, 1.0);
 
-  glm::perspective(fovy, aspect, zNear, zFar)
   while (!window.Closed())
     {
       window.Clear();
