@@ -6,7 +6,7 @@ namespace Graphics
   void WindowResize(GLFWwindow*, int width, int height);
 
   Window::Window(const char* title, int width, int height)
-      : m_title(title), m_width(width), m_height(height)
+      : title(title), width(width), height(height)
     {
       Init();
     }
@@ -23,20 +23,20 @@ namespace Graphics
 	  std::cout << "failed to initialized glfw!" << std::endl;
 	  return false;
 	}
-      m_window = glfwCreateWindow(m_width, m_height, m_title, NULL, NULL);
-      if(!m_window)
+      window = glfwCreateWindow(width, height, title, NULL, NULL);
+      if(!window)
 	{
 	  std::cout << "Failed to create window!" << std::endl;
 	  return false;
 	}
-	glfwMakeContextCurrent(m_window); // @suppress("Invalid arguments")
-	glfwSetWindowSizeCallback(m_window, WindowResize); // @suppress("Invalid arguments")
+	glfwMakeContextCurrent(window);
+	glfwSetWindowSizeCallback(window, WindowResize);
 
 	  glewExperimental=GL_TRUE;
 	  GLenum err=glewInit();
 	  if(err!=GLEW_OK)
 	  {
-	    //Problem: glewInit failed, something is seriously wrong.
+	    glfwTerminate();
 	    std::cout<<"glewInit failed, aborting."<<std::endl;
 	  }
 
@@ -50,13 +50,13 @@ namespace Graphics
 
   bool Window::Closed() const
     {
-      return glfwWindowShouldClose(m_window) == 1; // @suppress("Invalid arguments")
+      return glfwWindowShouldClose(window) == 1;
     }
 
   void Window::Update()
     {
       glfwPollEvents();
-      glfwSwapBuffers(m_window); // @suppress("Invalid arguments")
+      glfwSwapBuffers(window);
     }
 
   void WindowResize(GLFWwindow*, int width, int height)

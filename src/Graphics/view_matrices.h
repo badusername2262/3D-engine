@@ -6,17 +6,17 @@
 
 namespace Graphics {
 	
-	class View_Matrices
+	class ViewMatrix
 	{
 	public:
-		void orthographicProj { float left, float right, float bottom, float top, float near, float far };
+		void ortho(float left, float right, float bottom, float top, float near, float far);
 		
-		void PerspectiveProj { float left, float aspect, float top, float near, float far };
+		void Perspective(float fovy, float aspect, float near, float far);
 		
-		const glm::mat4& getProjection {} const { return projectionMatrix; };
+		const glm::mat4& getProjection () const { return projectionMatrix; }
 		
 	private:
-		glm::mat4 projectionMatrix { 1.0f };
+		glm::mat4 projectionMatrix{1.f};
 	};
 	
 }

@@ -33,7 +33,8 @@
 									<listOptionValue builtIn="false" value="&quot;D:\msys64\mingw64\include&quot;"/>
 									<listOptionValue builtIn="false" value="&quot;D:\msys64\mingw64\include\c++\11.2.0&quot;"/>
 								</option>
-								<option id="gnu.cpp.compiler.option.dialect.std.878624130" name="Language standard" superClass="gnu.cpp.compiler.option.dialect.std" useByScannerDiscovery="true" value="gnu.cpp.compiler.dialect.default" valueType="enumerated"/>
+								<option id="gnu.cpp.compiler.option.dialect.std.878624130" name="Language standard" superClass="gnu.cpp.compiler.option.dialect.std" useByScannerDiscovery="true" value="gnu.cpp.compiler.dialect.c++2a" valueType="enumerated"/>
+								<option IS_BUILTIN_EMPTY="false" IS_VALUE_EMPTY="true" id="gnu.cpp.compiler.option.preprocessor.def.1236223098" name="Defined symbols (-D)" superClass="gnu.cpp.compiler.option.preprocessor.def" useByScannerDiscovery="false" valueType="definedSymbols"/>
 								<inputType id="cdt.managedbuild.tool.gnu.cpp.compiler.input.1158311947" superClass="cdt.managedbuild.tool.gnu.cpp.compiler.input"/>
 							</tool>
 							<tool id="cdt.managedbuild.tool.gnu.c.compiler.mingw.exe.debug.91855069" name="GCC C Compiler" superClass="cdt.managedbuild.tool.gnu.c.compiler.mingw.exe.debug">
@@ -73,7 +74,7 @@
 									<listOptionValue builtIn="false" srcPrefixMapping="" srcRootPath="" value="glew32"/>
 								</option>
 								<option IS_BUILTIN_EMPTY="false" IS_VALUE_EMPTY="true" id="gnu.cpp.link.option.other.1142405712" name="Other options (-Xlinker [option])" superClass="gnu.cpp.link.option.other" useByScannerDiscovery="false" valueType="stringList"/>
-								<option id="gnu.cpp.link.option.flags.2107710642" name="Linker flags" superClass="gnu.cpp.link.option.flags" useByScannerDiscovery="false" value="" valueType="string"/>
+								<option id="gnu.cpp.link.option.flags.2107710642" name="Linker flags" superClass="gnu.cpp.link.option.flags" useByScannerDiscovery="false" value="--allow-multiple-definition -z muldefs" valueType="string"/>
 								<option id="gnu.cpp.link.option.nostdlibs.868468826" name="No startup or default libs (-nostdlib)" superClass="gnu.cpp.link.option.nostdlibs" useByScannerDiscovery="false" value="false" valueType="boolean"/>
 								<option id="gnu.cpp.link.option.nodeflibs.1224528512" name="Do not use default libraries (-nodefaultlibs)" superClass="gnu.cpp.link.option.nodeflibs" useByScannerDiscovery="false" value="false" valueType="boolean"/>
 								<inputType id="cdt.managedbuild.tool.gnu.cpp.linker.input.950130131" superClass="cdt.managedbuild.tool.gnu.cpp.linker.input">

@@ -12,11 +12,11 @@ namespace Graphics {
   class Window
   {
   private:
-    const char* m_title;
-    int m_width;
-    int m_height;
-    GLFWwindow* m_window;
-    bool  m_closed;
+    const char* title;
+    int width;
+    int height;
+    GLFWwindow* window;
+    bool  closed;
   public:
     Window(const char* title, int width, int height);
     ~Window();
