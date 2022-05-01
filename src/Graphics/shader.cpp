@@ -4,137 +4,113 @@
 
 namespace Graphics {
 
-  Shader::Shader(const char* vertpath, const char* fragpath)
-      : vertp(vertpath), fragp(fragpath)
-  {
-    shaderID = load();
-  }
-
-  GLuint Shader::load()
-  {
-
-    GLuint vertexShader = glCreateShader(GL_VERTEX_SHADER);
-
-    std::string vertStrSource = Utils::read_file(vertp);
-    std::string fragStrSource = Utils::read_file(fragp);
-
-    const char* vertSource = vertStrSource.c_str();
-    const char* fragSource = fragStrSource.c_str();
-
-    const GLchar* source = vertSource;
-    glShaderSource(vertexShader, 1, &source, 0);
-
-    // Compile the vertex shader
-    glCompileShader(vertexShader);
-
-    GLint isCompiled = 0;
-    glGetShaderiv(vertexShader, GL_COMPILE_STATUS, &isCompiled);
-    if(isCompiled == GL_FALSE)
+    Shader::Shader(const char* vertpath, const char* fragpath)
+        : vertp(vertpath), fragp(fragpath)
     {
-    	GLint maxLength = 0;
-    	glGetShaderiv(vertexShader, GL_INFO_LOG_LENGTH, &maxLength);
-
-    	// The maxLength includes the NULL character
-    	std::vector<GLchar> infoLog(maxLength);
-    	glGetShaderInfoLog(vertexShader, maxLength, &maxLength, &infoLog[0]);
-
-    	// We don't need the shader anymore.
-    	glDeleteShader(vertexShader);
-
-    	std::cout << "ahhh vertex no worky" << std::endl;
-
-    	// In this simple program, we'll just leave
-    	return 0;
+        shaderID = load();
     }
 
-    // Create an empty fragment shader handle
-    GLuint fragmentShader = glCreateShader(GL_FRAGMENT_SHADER);
-
-    // Send the fragment shader source code to GL
-    // Note that std::string's .c_str is NULL character terminated.
-    source = fragSource;
-    glShaderSource(fragmentShader, 1, &source, 0);
-
-    // Compile the fragment shader
-    glCompileShader(fragmentShader);
-
-    glGetShaderiv(fragmentShader, GL_COMPILE_STATUS, &isCompiled);
-    if (isCompiled == GL_FALSE)
+    GLuint Shader::load()
     {
-    	GLint maxLength = 0;
-    	glGetShaderiv(fragmentShader, GL_INFO_LOG_LENGTH, &maxLength);
+        GLuint program = glCreateProgram();
+        GLuint vertex = glCreateShader(GL_VERTEX_SHADER);
+        GLuint fragment = glCreateShader(GL_FRAGMENT_SHADER);
 
-    	// The maxLength includes the NULL character
-    	std::vector<GLchar> infoLog(maxLength);
-    	glGetShaderInfoLog(fragmentShader, maxLength, &maxLength, &infoLog[0]);
+        std::string vertStrSource = Utils::read_file(vertp);
+        std::string fragStrSource = Utils::read_file(fragp);
 
-    	// We don't need the shader anymore.
-    	glDeleteShader(fragmentShader);
-    	// Either of them. Don't leak shaders.
-    	glDeleteShader(vertexShader);
+        const char* vertSource = vertStrSource.c_str();
+        const char* fragSource = fragStrSource.c_str();
 
-    	std::cout << "ahhh fragment no worky" << std::endl;
+        glShaderSource(vertex, 1, &vertSource, NULL);
+        glCompileShader(vertex);
 
-    	// In this simple program, we'll just leave
-    	return 0;
+        GLint result;
+        glGetShaderiv(vertex, GL_COMPILE_STATUS, &result);
+        if (result == GL_FALSE)
+        {
+            GLint length;
+            glGetShaderiv(vertex, GL_INFO_LOG_LENGTH, &length);
+            std::vector<char> error(length);
+            glGetShaderInfoLog(vertex, length, &length, &error[0]);
+            std::cout << &error[0] << std::endl;
+            glDeleteShader(vertex);
+            return 0;
+        }
+
+        glShaderSource(fragment, 1, &fragSource, NULL);
+        glCompileShader(fragment);
+
+        glGetShaderiv(fragment, GL_COMPILE_STATUS, &result);
+        if (result == GL_FALSE)
+        {
+            GLint length;
+            glGetShaderiv(fragment, GL_INFO_LOG_LENGTH, &length);
+            std::vector<char> error(length);
+            glGetShaderInfoLog(fragment, length, &length, &error[0]);
+            std::cout << &error[0] << std::endl;
+            glDeleteShader(fragment);
+            return 0;
+        }
+
+        glAttachShader(program, vertex);
+        glAttachShader(program, fragment);
+
+        glLinkProgram(program);
+        glValidateProgram(program);
+
+        glDeleteShader(vertex);
+        glDeleteShader(fragment);
+
+        return program;
     }
 
-    // Vertex and fragment shaders are successfully compiled.
-    // Now time to link them together into a program.
-    // Get a program object.
-    shaderID = glCreateProgram();
-    GLuint program = shaderID;
-
-    // Attach our shaders to our program
-    glAttachShader(program, vertexShader);
-    glAttachShader(program, fragmentShader);
-
-    // Link our program
-    glLinkProgram(program);
-
-    // Note the different functions here: glGetProgram* instead of glGetShader*.
-    GLint isLinked = 0;
-    glGetProgramiv(program, GL_LINK_STATUS, (int *)&isLinked);
-    if (isLinked == GL_FALSE)
+    Shader::~Shader()
     {
-    	GLint maxLength = 0;
-    	glGetProgramiv(program, GL_INFO_LOG_LENGTH, &maxLength);
-
-    	// The maxLength includes the NULL character
-    	std::vector<GLchar> infoLog(maxLength);
-    	glGetProgramInfoLog(program, maxLength, &maxLength, &infoLog[0]);
-
-    	// We don't need the program anymore.
-    	glDeleteProgram(program);
-    	// Don't leak shaders either.
-    	glDeleteShader(vertexShader);
-    	glDeleteShader(fragmentShader);
-
-    	// Use the infoLog as you see fit.
-
-    	// In this simple program, we'll just leave
-    	return 0;
+      glDeleteProgram(shaderID);
     }
 
-    // Always detach shaders after a successful link.
-    glDetachShader(program, vertexShader);
-    glDetachShader(program, fragmentShader);
+    GLint Shader::getUniformLocation(const GLchar* name)
+    {
+        return glGetUniformLocation(shaderID, name);
+    }
 
-    return shaderID;
-  }
+    void Shader::setUniform1i(const GLchar* name, int value)
+    {
+        glUniform1i(getUniformLocation(name), value);
+    }
 
-  Shader::~Shader()
-  {
-    glDeleteProgram(shaderID);
-  }
+    void Shader::setUniform1f(const GLchar* name, float value)
+    {
+        glUniform1f(getUniformLocation(name), value);
+    }
+    void Shader::setUniform2f(const GLchar* name, const glm::vec2& vector)
+    {
+        glUniform2f(getUniformLocation(name), vector.x, vector.y);
+    }
 
-  void Shader::bind() const
-  {
-    glUseProgram(shaderID);
-  }
+    void Shader::setUniform3f(const GLchar* name, const glm::vec3& vector)
+    {
+        glUniform3f(getUniformLocation(name), vector.x, vector.y, vector.z);
+    }
 
-  void Shader::unbind() const
-  {
-    glUseProgram(0);
-  }
+    void Shader::setUniform4f(const GLchar* name, const glm::vec4& vector)
+    {
+        glUniform4f(getUniformLocation(name), vector.x, vector.y, vector.z, vector.w);
+    }
+
+    void Shader::setUniformMat4(const GLchar* name, const Graphics::Camera& matrix)
+    {
+        glUniformMatrix4fv(getUniformLocation(name), 1, GL_FALSE, matrix.elements);
+    }
+
+    void Shader::bind() const
+    {
+      glUseProgram(shaderID);
+    }
+
+    void Shader::unbind() const
+    {
+      glUseProgram(0);
+    }
 }
