@@ -48,9 +48,9 @@ namespace Graphics {
 
         result.elements[0 + 0 * 4] = 1.0f / (aspect * tanHalfFovy);
         result.elements[1 + 1 * 4] = 1.0f / (tanHalfFovy);
-        result.elements[2 + 2 * 4] = far / (far - near);
+        result.elements[2 + 2 * 4] = -(near - far) / (near - far);
         result.elements[2 + 3 * 4] = 1.0f;
-        result.elements[3 + 2 * 4] = -(far * near) / (far - near);
+        result.elements[3 + 2 * 4] = (2 * far * near) / (near - far);
 
         return result;
     }

@@ -48,12 +48,12 @@ namespace Graphics
 	        std::cout << "Failed to create window!" << std::endl;
 	        return false;
 	    }
-	    glfwMakeContextCurrent(window); // @suppress("Invalid arguments")
-        glfwSetWindowUserPointer(window, this); // @suppress("Invalid arguments")
-        glfwSetWindowSizeCallback(window, window_resize); // @suppress("Invalid arguments")
-        glfwSetKeyCallback(window, key_callback); // @suppress("Invalid arguments")
-        glfwSetMouseButtonCallback(window, mouse_button_callback); // @suppress("Invalid arguments")
-        glfwSetCursorPosCallback(window, cursor_position_callback); // @suppress("Invalid arguments")
+	    glfwMakeContextCurrent(window);
+        glfwSetWindowUserPointer(window, this);
+        glfwSetWindowSizeCallback(window, window_resize);
+        glfwSetKeyCallback(window, key_callback);
+        glfwSetMouseButtonCallback(window, mouse_button_callback);
+        glfwSetCursorPosCallback(window, cursor_position_callback);
 
 	    glewExperimental=GL_TRUE;
 	    GLenum err=glewInit();
@@ -96,12 +96,12 @@ namespace Graphics
 
     bool Window::Closed() const
     {
-        return glfwWindowShouldClose(window) == 1; // @suppress("Invalid arguments")
+        return glfwWindowShouldClose(window) == 1;
     }
 
     void Window::Update()
     {
-        glfwSwapBuffers(window); // @suppress("Invalid arguments")
+        glfwSwapBuffers(window);
         glfwPollEvents();
     }
 
@@ -112,19 +112,19 @@ namespace Graphics
 
     void key_callback(GLFWwindow* window, int key, int scancode, int action, int mods)
     {
-        Window* win = (Window*) glfwGetWindowUserPointer(window); // @suppress("Invalid arguments")
+        Window* win = (Window*) glfwGetWindowUserPointer(window);
         win->Keys[key] = action != GLFW_RELEASE;
     }
 
     void mouse_button_callback(GLFWwindow* window, int button, int action, int mods)
     {
-    	Window* win = (Window*) glfwGetWindowUserPointer(window); // @suppress("Invalid arguments")
+    	Window* win = (Window*) glfwGetWindowUserPointer(window);
         win->mouseButtons[button] = action != GLFW_RELEASE;
     }
 
     void cursor_position_callback(GLFWwindow* window, double xpos, double ypos)
     {
-    	Window* win = (Window*) glfwGetWindowUserPointer(window); // @suppress("Invalid arguments")
+    	Window* win = (Window*) glfwGetWindowUserPointer(window);
     	win->mx = xpos;
     	win->my = ypos;
     }
