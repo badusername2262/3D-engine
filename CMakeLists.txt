@@ -8,7 +8,7 @@ link_directories(${CMAKE_SOURCE_DIR}/lib)
 
 find_package(OpenGL REQUIRED)
 
-set(LIBS glfw3 opengl32 glew32 ImGui)
+set(LIBS glfw3 opengl32 glew32 ImGui box2d)
 
 set(Engine_HEADERS src/Buffers/buffer.hpp
                    src/Buffers/indexbuffer.hpp
