@@ -1,10 +1,10 @@
-#include "src/Graphics/window.h"
-#include "src/Graphics/shader.h"
-#include "src/Utils/Camera.h"
+#include "Graphics/window.h"
+#include "Graphics/shader.h"
+#include "Utils/Camera.h"
 
-#include "src/Buffers/buffer.h"
-#include "src/Buffers/indexbuffer.h"
-#include "src/Buffers/vertexarray.h"
+#include "Buffers/buffer.h"
+#include "Buffers/indexbuffer.h"
+#include "Buffers/vertexarray.h"
 
 #define using_buffers 1
 
@@ -76,7 +76,7 @@ int main()
 
 	Camera ortho = Camera::Orthographic(0, 16, 0, 9, -1, 1);
 
-    Shader shader("../src/Shaders/shader.vert", "../src/Shaders/shader.frag");
+    Shader shader("../resources/Shaders/shader.vert", "../resources/Shaders/shader.frag");
     shader.bind();
 	shader.setUniformMat4("pr_matrix", ortho);
 	shader.setUniformMat4("ml_matrix", Camera::translation(glm::vec3(4, 3, 0)));
