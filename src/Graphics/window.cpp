@@ -35,8 +35,17 @@ namespace Graphics
         glfwTerminate();
     }
 
+    static void glfw_error_callback(int error, const char* description)
+    {
+        fprintf(stderr, "Glfw Error %d: %s\n", error, description);
+    }
+
     bool Window::Init()
     {
+        glfwSetErrorCallback(glfw_error_callback);
+
+        const char* glsl_version = "#version 460";
+
         if(!glfwInit())
 	    {
 	        std::cout << "failed to initialized glfw!" << std::endl;
@@ -62,6 +71,14 @@ namespace Graphics
 	        glfwTerminate();
 	        std::cout<<"glewInit failed, aborting."<<std::endl;
 	    }
+
+        IMGUI_CHECKVERSION();
+        ImGui::CreateContext();
+	    ImGuiIO& io = ImGui::GetIO(); (void)io;
+        ImGui::StyleColorsDark();
+        
+	    ImGui_ImplGlfw_InitForOpenGL(window, true);
+        ImGui_ImplOpenGL3_Init(glsl_version);
 
 	return true;
     }
