@@ -1,10 +1,10 @@
-#include "Graphics/window.h"
-#include "Graphics/shader.h"
-#include "Utils/Camera.h"
+#include "Graphics/window.hpp"
+#include "Graphics/shader.hpp"
+#include "Utils/camera.hpp"
 
-#include "Buffers/buffer.h"
-#include "Buffers/indexbuffer.h"
-#include "Buffers/vertexarray.h"
+#include "Buffers/buffer.hpp"
+#include "Buffers/indexbuffer.hpp"
+#include "Buffers/vertexarray.hpp"
 
 #define using_buffers 1
 

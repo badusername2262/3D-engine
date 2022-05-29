@@ -1,4 +1,4 @@
-#include "vertexarray.h"
+#include "vertexarray.hpp"
 
 namespace Graphics {
 

@@ -4,9 +4,9 @@
 #include <iostream>
 #include <GL/glew.h>
 
-#include "../Utils/camera.h"
+#include "../Utils/camera.hpp"
 #include <glm/glm.hpp>
-#include "../Utils/fileutils.h"
+#include "../Utils/fileutils.hpp"
 
 namespace Graphics {
 
