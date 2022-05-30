@@ -1,3 +1,0 @@
-C:/Users/alexr/eclipse-workspace/3D-engine/build/CMakeFiles/engine.dir
-C:/Users/alexr/eclipse-workspace/3D-engine/build/CMakeFiles/edit_cache.dir
-C:/Users/alexr/eclipse-workspace/3D-engine/build/CMakeFiles/rebuild_cache.dir
