@@ -6,4 +6,4 @@ Windows Gcc only to build:
 >2. cmake -G "MinGW Makefiles" ..
 >3. mingw32-make
 
-the exe is located in bin folder in 3D-engine.
+the demo exe is located in 3D-engine/bin.
