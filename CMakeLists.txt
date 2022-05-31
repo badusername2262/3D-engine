@@ -15,7 +15,7 @@ set(Engine_HEADERS src/Buffers/
 
 set(Engine_SOURCES main.cpp src/Graphics/window.cpp src/Utils/camera.cpp)
 
-add_executable(engine ${Engine_SOURCES})
+add_executable(engine ${Engine_SOURCES} bin/engine.rc)
 
 target_link_libraries(engine ${LIBS})
 target_include_directories(engine PRIVATE include/ ${Engine_HEADERS})

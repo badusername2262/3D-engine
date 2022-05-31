@@ -19,7 +19,7 @@ int main()
 
 	Camera ortho = Camera::Orthographic(0, 16, 0, 9, -1, 1);
 
-    Shader shader("../resources/Shaders/shader.vert", "../resources/Shaders/shader.frag");
+    Shader shader("../resources/Shaders/VertShader", "../resources/Shaders/FragShader");
     shader.bind();
 	shader.setUniformMat4("pr_matrix", ortho);
 	shader.setUniformMat4("ml_matrix", Camera::translation(glm::vec3(4, 3, 0)));
