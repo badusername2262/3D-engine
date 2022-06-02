@@ -2,7 +2,7 @@
 
 #include <GL/glew.h>
 #include <glm/glm.hpp>
-#include "renderer.hpp"
+#include "2drenderer.hpp"
 
 namespace Graphics{
 

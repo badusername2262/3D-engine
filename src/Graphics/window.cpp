@@ -1,4 +1,5 @@
 #include "window.hpp"
+#include "stb_image/stb_image.h"
 
 namespace Graphics
 {
@@ -52,6 +53,12 @@ namespace Graphics
 	        return false;
 	    }
         window = glfwCreateWindow(width, height, title, NULL, NULL);
+
+        GLFWimage images[1];
+        images[0].pixels = stbi_load("ico.png", &images[0].width, &images[0].height, 0, 4);
+        glfwSetWindowIcon(window, 1, images);
+        stbi_image_free(images[0].pixels);
+
         if(!window)
 	    {
 	        std::cout << "Failed to create window!" << std::endl;

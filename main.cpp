@@ -19,7 +19,7 @@ int main()
 
 	Camera ortho = Camera::Orthographic(0, 16, 0, 9, -1, 1);
 
-    Shader shader("../resources/Shaders/shader.vert", "../resources/Shaders/shader.frag");
+    Shader shader("../resources/Shaders/VertShader", "../resources/Shaders/FragShader");
     shader.bind();
 	shader.setUniformMat4("pr_matrix", ortho);
 	shader.setUniformMat4("ml_matrix", Camera::translation(glm::vec3(4, 3, 0)));
@@ -32,6 +32,8 @@ int main()
 	shader.setUniform4f("colour", glm::vec4(0.2f, 0.3f, 0.8f, 1.0f));
 
 	bool show_demo_window = true;
+    static float f = 0.0f;
+    static int counter = 0;
 
     while (!window.Closed())
     {
@@ -41,11 +43,11 @@ int main()
         ImGui_ImplGlfw_NewFrame();
         ImGui::NewFrame();
 
-        static float f = 0.0f;
-        static int counter = 0;
+        if(window.isKeyPressed(GLFW_KEY_TAB)) {
         ImGui::Begin("FPS Checker.");
         ImGui::Text("Application average %.3f ms/frame (%.1f FPS)", 1000.0f / ImGui::GetIO().Framerate, ImGui::GetIO().Framerate);
         ImGui::End();
+        }
 
         double x, y;
         window.getmouseposition(x, y);
