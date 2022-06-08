@@ -19,7 +19,7 @@ namespace Graphics {
 			glBindBuffer(GL_ARRAY_BUFFER, 0);
 		}
 
-		void ~Buffer() { glDeleteBuffers(1, &bufferID); }
+		~Buffer() { glDeleteBuffers(1, &bufferID); }
 		void bind() const { glBindBuffer(GL_ARRAY_BUFFER, bufferID); }
 		void unbind() const { glBindBuffer(GL_ARRAY_BUFFER, 0); }
 

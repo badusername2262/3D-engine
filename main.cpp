@@ -6,10 +6,6 @@
 #include "src/Buffers/indexbuffer.hpp"
 #include "src/Buffers/vertexarray.hpp"
 
-#include "src/Graphics/renderer.hpp"
-#include "src/Graphics/simple2drenderer.hpp"
-
-#define using_buffers 1
 using namespace Graphics;
 
 int main()
@@ -17,16 +13,53 @@ int main()
     Window window("title", 960, 540);
     glClearColor(0.2, 0.3, 0.8, 1.0);
 
-	Camera ortho = Camera::Orthographic(0, 16, 0, 9, -1, 1);
+	GLfloat vertices[] =
+	{
+		0, 0, 0,
+		0, 3, 0,
+		8, 3, 0,
+		8, 0, 0
+	};
+
+	GLushort indices[] =
+	{
+		0, 1, 2,
+		2, 3, 0
+	};
+
+	GLfloat colorsA[] =
+	{
+		1, 0, 1, 1,
+		1, 0, 1, 1,
+		1, 0, 1, 1,
+		1, 0, 1, 1
+	};
+
+	GLfloat colorsB[] =
+	{
+		0.2f, 0.3f, 0.8f, 1,
+		0.2f, 0.3f, 0.8f, 1,
+		0.2f, 0.3f, 0.8f, 1,
+		0.2f, 0.3f, 0.8f, 1
+	};
+
+	VertexArray sprite1, sprite2;
+	IndexBuffer ibo(indices, 6);
+
+	sprite1.addBuffer(new Buffer(vertices, 4 * 3, 3), 0);
+	sprite1.addBuffer(new Buffer(colorsA, 4 * 4, 4), 1);
+
+	sprite2.addBuffer(new Buffer(vertices, 4 * 3, 3), 0);
+	sprite2.addBuffer(new Buffer(colorsB, 4 * 4, 4), 1);
+
+	Camera ortho();
+
+	glm::mat4 orthO = glm::ortho(-(800.0f / 2.0f), 800.0f / 2.0f, 600.0f / 2.0f, -(600.0f / 2.0f), -1000.0f, 1000.0f);
 
     Shader shader("../resources/Shaders/VertShader", "../resources/Shaders/FragShader");
     shader.bind();
 	shader.setUniformMat4("pr_matrix", ortho);
 	shader.setUniformMat4("ml_matrix", Camera::translation(glm::vec3(4, 3, 0)));
-
-	Renderer sprite(glm::vec3(5, 5, 0), glm::vec2(4, 4), glm::vec4(1, 0, 1, 1), shader);
-	Renderer sprite2(glm::vec3(7, 1, 0), glm::vec2(2, 3), glm::vec4(0.2f, 0, 1, 1), shader);
-	simple2drenderer renderer;
 
 	shader.setUniform2f("light_pos", glm::vec2(4.0f, 1.5f));
 	shader.setUniform4f("colour", glm::vec4(0.2f, 0.3f, 0.8f, 1.0f));
@@ -53,9 +86,19 @@ int main()
         window.getmouseposition(x, y);
         shader.setUniform2f("light_pos", glm::vec2((float)(x * 16.0f / 960.0f), (float)(9.0f - y * 9.0f / 540.0f)));
 
-		renderer.submit(&sprite);
-		renderer.submit(&sprite2);
-		renderer.flush();
+		sprite1.bind();
+		ibo.bind();
+		shader.setUniformMat4("ml_matrix", Camera::translation(glm::vec3(4, 3, 0)));
+		glDrawElements(GL_TRIANGLES, ibo.getCount(), GL_UNSIGNED_SHORT, 0);
+		ibo.bind();
+		sprite1.unbind();
+
+		sprite2.bind();
+		ibo.bind();
+		shader.setUniformMat4("ml_matrix", Camera::translation(glm::vec3(0, 0, 0)));
+		glDrawElements(GL_TRIANGLES, ibo.getCount(), GL_UNSIGNED_SHORT, 0);
+		ibo.bind();
+		sprite2.unbind();
 
 		ImGui::Render();
         ImGui_ImplOpenGL3_RenderDrawData(ImGui::GetDrawData());

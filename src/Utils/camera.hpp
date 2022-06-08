@@ -1,25 +1,26 @@
 #pragma once
 
+#define GLM_FORCE_INLINE
+
 #include <glm/glm.hpp>
+#include <glm/ext/matrix_clip_space.hpp>
 
 namespace Graphics {
 	
-	struct Camera
+	class Camera
 	{
+	private:
+	int width, height, near, far;
+	glm::vec3 pos;
 	public:
-		float elements[4 * 4];
+	Camera(glm::vec3& pos, int width, int height, int near, int far);
+	~Camera();
 
-		Camera();
-		Camera(float diagonal);
-
-		static Camera identity();
-
-		static Camera Orthographic(float left, float right, float bottom, float top, float near, float far);
-		static Camera Perspective(float fovy, float aspect, float near, float far);
-
-		static Camera translation(const glm::vec3& translation);
-		static Camera rotation(float angle, const glm::vec3& axis);
-		static Camera scale(const glm::vec3& scale);
+	Orthographic();
+	Perspective();
+	Normal();
+	private:
+	void Init();
 	};
 	
 }

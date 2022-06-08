@@ -3,7 +3,9 @@ project(engine VERSION 0.1.0)
 
 set(CMAKE_RUNTIME_OUTPUT_DIRECTORY ../bin)
 
-link_directories(${CMAKE_SOURCE_DIR}/lib)
+link_directories(${CMAKE_SOURCE_DIR}/lib 
+		 C:/msys64/mingw64/lib
+		 C:/msys64/usr/lib)
 
 find_package(OpenGL REQUIRED)
 
@@ -17,8 +19,9 @@ set(Engine_SOURCES main.cpp src/Graphics/window.cpp src/Utils/camera.cpp)
 
 add_executable(engine ${Engine_SOURCES} bin/icon.rc)
 
+
 target_link_libraries(engine ${LIBS})
 target_include_directories(engine PRIVATE include/ ${Engine_HEADERS})
- 
+
 set(CPACK_PROJECT_NAME ${PROJECT_NAME})
 set(CPACK_PROJECT_VERSION ${PROJECT_VERSION})
