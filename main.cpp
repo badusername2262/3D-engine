@@ -1,10 +1,11 @@
 #include "src/Graphics/window.hpp"
 #include "src/Graphics/shader.hpp"
-#include "src/Utils/camera.hpp"
 
 #include "src/Buffers/buffer.hpp"
 #include "src/Buffers/indexbuffer.hpp"
 #include "src/Buffers/vertexarray.hpp"
+
+#include <glm/ext.hpp>
 
 using namespace Graphics;
 
@@ -52,14 +53,22 @@ int main()
 	sprite2.addBuffer(new Buffer(vertices, 4 * 3, 3), 0);
 	sprite2.addBuffer(new Buffer(colorsB, 4 * 4, 4), 1);
 
-	Camera ortho();
+	glm::mat4 ortho[] = 
+	{
+		glm::ortho(-(800.0f / 2.0f), 800.0f / 2.0f, 600.0f / 2.0f, -(600.0f / 2.0f), -1000.0f, 1000.0f)
+	};
 
-	glm::mat4 orthO = glm::ortho(-(800.0f / 2.0f), 800.0f / 2.0f, 600.0f / 2.0f, -(600.0f / 2.0f), -1000.0f, 1000.0f);
+	glm::mat4 translate[] =
+	{
+		glm::translate(glm::mat4(), glm::vec3(1, 2, 0)),
+		glm::translate(glm::mat4(), glm::vec3(4, 3, 0)),
+		glm::translate(glm::mat4(), glm::vec3(0, 0, 0))
+	};
 
     Shader shader("../resources/Shaders/VertShader", "../resources/Shaders/FragShader");
     shader.bind();
-	shader.setUniformMat4("pr_matrix", ortho);
-	shader.setUniformMat4("ml_matrix", Camera::translation(glm::vec3(4, 3, 0)));
+	shader.setUniformMat4("pr_matrix", ortho[0]);
+	shader.setUniformMat4("ml_matrix", translate[0]);
 
 	shader.setUniform2f("light_pos", glm::vec2(4.0f, 1.5f));
 	shader.setUniform4f("colour", glm::vec4(0.2f, 0.3f, 0.8f, 1.0f));
@@ -88,14 +97,14 @@ int main()
 
 		sprite1.bind();
 		ibo.bind();
-		shader.setUniformMat4("ml_matrix", Camera::translation(glm::vec3(4, 3, 0)));
+		shader.setUniformMat4("ml_matrix", translate[1]);
 		glDrawElements(GL_TRIANGLES, ibo.getCount(), GL_UNSIGNED_SHORT, 0);
 		ibo.bind();
 		sprite1.unbind();
 
 		sprite2.bind();
 		ibo.bind();
-		shader.setUniformMat4("ml_matrix", Camera::translation(glm::vec3(0, 0, 0)));
+		shader.setUniformMat4("ml_matrix", translate[2]);
 		glDrawElements(GL_TRIANGLES, ibo.getCount(), GL_UNSIGNED_SHORT, 0);
 		ibo.bind();
 		sprite2.unbind();
@@ -107,7 +116,6 @@ int main()
 
     ImGui_ImplOpenGL3_Shutdown();
     ImGui_ImplGlfw_Shutdown();
-    ImGui::DestroyContext();
     glfwTerminate();
     return 0;
 }

@@ -15,7 +15,7 @@ set(Engine_HEADERS src/Buffers/
                    src/Graphics/
                    src/Utils/)
 
-set(Engine_SOURCES main.cpp src/Graphics/window.cpp src/Utils/camera.cpp)
+set(Engine_SOURCES main.cpp src/Graphics/window.cpp)
 
 add_executable(engine ${Engine_SOURCES} bin/icon.rc)
 

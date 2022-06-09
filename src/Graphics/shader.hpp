@@ -4,8 +4,8 @@
 #include <iostream>
 #include <GL/glew.h>
 
-#include "../Utils/camera.hpp"
 #include <glm/glm.hpp>
+#include <glm/gtc/type_ptr.hpp>
 #include "../Utils/fileutils.hpp"
 
 namespace Graphics {
@@ -27,7 +27,7 @@ namespace Graphics {
         void setUniform2f(const GLchar* name, const glm::vec2& vector) { glUniform2f(getUniformLocation(name), vector.x, vector.y); }
         void setUniform3f(const GLchar* name, const glm::vec3& vector) { glUniform3f(getUniformLocation(name), vector.x, vector.y, vector.z); }
         void setUniform4f(const GLchar* name, const glm::vec4& vector) { glUniform4f(getUniformLocation(name), vector.x, vector.y, vector.z, vector.w); }
-        void setUniformMat4(const GLchar* name, const Graphics::Camera& matrix) { glUniformMatrix4fv(getUniformLocation(name), 1, GL_FALSE, matrix.elements); }
+        void setUniformMat4(const GLchar* name, const glm::mat4& mat4) { glUniformMatrix4fv(getUniformLocation(name), 1, GL_FALSE, glm::value_ptr(mat4)); }
 
         void bind() const { glUseProgram(shaderID); }
         void unbind() const { glUseProgram(0); }

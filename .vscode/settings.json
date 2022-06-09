@@ -1,8 +1,0 @@
-{
-    "cmake.cmakePath": "${command:cmake.buildkit.cmake.exe}",
-    "cmake.preferredGenerators": ["Unix Makefiles"],
-    "cmake.configureSettings": {
-        "CMAKE_MAKE_PROGRAM": "${command:cmake.buildkit.generator.exe}",
-        "CMAKE_VERBOSE_MAKEFILE": false
-    }
-}
