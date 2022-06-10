@@ -53,22 +53,25 @@ int main()
 	sprite2.addBuffer(new Buffer(vertices, 4 * 3, 3), 0);
 	sprite2.addBuffer(new Buffer(colorsB, 4 * 4, 4), 1);
 
-	glm::mat4 ortho[] = 
-	{
-		glm::ortho(-(800.0f / 2.0f), 800.0f / 2.0f, 600.0f / 2.0f, -(600.0f / 2.0f), -1000.0f, 1000.0f)
-	};
+	glm::mat4 ortho = glm::ortho(-(800.0f/2), 800.0f/2, -(600.0f/2), 600.0f/2, 0.0f, 1.0f);
 
-	glm::mat4 translate[] =
-	{
-		glm::translate(glm::mat4(), glm::vec3(1, 2, 0)),
-		glm::translate(glm::mat4(), glm::vec3(4, 3, 0)),
-		glm::translate(glm::mat4(), glm::vec3(0, 0, 0))
-	};
+    glm::mat4 view = glm::mat4(1.0f);
+	// note that we're translating the scene in the reverse direction of where we want to move
+	view = glm::translate(view, glm::vec3(0.0f, 0.0f, -3.0f)); 
 
-    Shader shader("../resources/Shaders/VertShader", "../resources/Shaders/FragShader");
+	glm::mat4 model = glm::mat4(1.0f);
+	model = glm::rotate(model, glm::radians(-55.0f), glm::vec3(1.0f, 0.0f, 0.0f)); 
+
+	glm::mat4 translate = glm::translate(glm::mat4(), glm::vec3(0, 0, 0));
+
+	glm::mat4 translate2 = glm::translate(glm::mat4(), glm::vec3(4, 3, 0));
+
+	glm::mat4 translate3 = glm::translate(glm::mat4(), glm::vec3(0, 0, 0));
+
+    Shader shader("../resources/Shaders/VertShader", "");
     shader.bind();
-	shader.setUniformMat4("pr_matrix", ortho[0]);
-	shader.setUniformMat4("ml_matrix", translate[0]);
+	shader.setUniformMat4("pr_matrix", glm::value_ptr(ortho));
+	shader.setUniformMat4("ml_matrix", glm::value_ptr(view));
 
 	shader.setUniform2f("light_pos", glm::vec2(4.0f, 1.5f));
 	shader.setUniform4f("colour", glm::vec4(0.2f, 0.3f, 0.8f, 1.0f));
@@ -97,14 +100,14 @@ int main()
 
 		sprite1.bind();
 		ibo.bind();
-		shader.setUniformMat4("ml_matrix", translate[1]);
+		shader.setUniformMat4("ml_matrix", glm::value_ptr(model));
 		glDrawElements(GL_TRIANGLES, ibo.getCount(), GL_UNSIGNED_SHORT, 0);
 		ibo.bind();
 		sprite1.unbind();
 
 		sprite2.bind();
 		ibo.bind();
-		shader.setUniformMat4("ml_matrix", translate[2]);
+		shader.setUniformMat4("ml_matrix", glm::value_ptr(model));
 		glDrawElements(GL_TRIANGLES, ibo.getCount(), GL_UNSIGNED_SHORT, 0);
 		ibo.bind();
 		sprite2.unbind();
