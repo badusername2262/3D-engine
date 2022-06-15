@@ -2,10 +2,10 @@
 	"artifacts" : 
 	[
 		{
-			"path" : "C:/Users/GSCrohdea/Desktop/3D_engine/bin/engine.exe"
+			"path" : "C:/Users/alexr/Desktop/3D-Engine/bin/engine.exe"
 		},
 		{
-			"path" : "C:/Users/GSCrohdea/Desktop/3D_engine/bin/engine.pdb"
+			"path" : "C:/Users/alexr/Desktop/3D-Engine/bin/engine.pdb"
 		}
 	],
 	"backtrace" : 1,
@@ -66,19 +66,19 @@
 			[
 				{
 					"backtrace" : 4,
-					"path" : "C:/Users/GSCrohdea/Desktop/3D_engine/include"
+					"path" : "C:/Users/alexr/Desktop/3D-Engine/include"
 				},
 				{
 					"backtrace" : 4,
-					"path" : "C:/Users/GSCrohdea/Desktop/3D_engine/src/Buffers"
+					"path" : "C:/Users/alexr/Desktop/3D-Engine/src/Buffers"
 				},
 				{
 					"backtrace" : 4,
-					"path" : "C:/Users/GSCrohdea/Desktop/3D_engine/src/Graphics"
+					"path" : "C:/Users/alexr/Desktop/3D-Engine/src/Graphics"
 				},
 				{
 					"backtrace" : 4,
-					"path" : "C:/Users/GSCrohdea/Desktop/3D_engine/src/Utils"
+					"path" : "C:/Users/alexr/Desktop/3D-Engine/src/Utils"
 				}
 			],
 			"language" : "CXX",
@@ -94,19 +94,19 @@
 			[
 				{
 					"backtrace" : 4,
-					"path" : "C:/Users/GSCrohdea/Desktop/3D_engine/include"
+					"path" : "C:/Users/alexr/Desktop/3D-Engine/include"
 				},
 				{
 					"backtrace" : 4,
-					"path" : "C:/Users/GSCrohdea/Desktop/3D_engine/src/Buffers"
+					"path" : "C:/Users/alexr/Desktop/3D-Engine/src/Buffers"
 				},
 				{
 					"backtrace" : 4,
-					"path" : "C:/Users/GSCrohdea/Desktop/3D_engine/src/Graphics"
+					"path" : "C:/Users/alexr/Desktop/3D-Engine/src/Graphics"
 				},
 				{
 					"backtrace" : 4,
-					"path" : "C:/Users/GSCrohdea/Desktop/3D_engine/src/Utils"
+					"path" : "C:/Users/alexr/Desktop/3D-Engine/src/Utils"
 				}
 			],
 			"language" : "RC",
@@ -131,7 +131,7 @@
 			},
 			{
 				"backtrace" : 2,
-				"fragment" : "-LC:\\Users\\GSCrohdea\\Desktop\\3D_engine\\lib",
+				"fragment" : "-LC:\\Users\\alexr\\Desktop\\3D-Engine\\lib",
 				"role" : "libraryPath"
 			},
 			{

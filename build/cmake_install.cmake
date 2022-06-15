@@ -1,4 +1,4 @@
-# Install script for directory: C:/Users/GSCrohdea/Desktop/3D_engine
+# Install script for directory: C:/Users/alexr/Desktop/3D-Engine
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
@@ -45,5 +45,5 @@ endif()
 
 string(REPLACE ";" "\n" CMAKE_INSTALL_MANIFEST_CONTENT
        "${CMAKE_INSTALL_MANIFEST_FILES}")
-file(WRITE "C:/Users/GSCrohdea/Desktop/3D_engine/build/${CMAKE_INSTALL_MANIFEST}"
+file(WRITE "C:/Users/alexr/Desktop/3D-Engine/build/${CMAKE_INSTALL_MANIFEST}"
      "${CMAKE_INSTALL_MANIFEST_CONTENT}")

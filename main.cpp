@@ -46,8 +46,7 @@ int main()
 
     body->CreateFixture(&fixtureDef);
 
-    glm::float32 timeStep = 1.0f / 60.0f;
-
+    float timeStep = 1.0f/3.0f;
     int32 velocityIterations = 6;
     int32 positionIterations = 2;
 
@@ -65,10 +64,13 @@ int main()
 
 	bool show_demo_window = true;
 
+    static float f = 0.0f;
+    static int counter = 0;
+
     while (!window.Closed())
     {
         window.Clear();
-
+        
         ImGui_ImplOpenGL3_NewFrame();
         ImGui_ImplGlfw_NewFrame();
         ImGui::NewFrame();
@@ -76,11 +78,10 @@ int main()
         world.Step(timeStep, velocityIterations, positionIterations);
         b2Vec2 position = body->GetPosition();
         glm::float32 angle = body->GetAngle();
-        printf("%4.2f %4.2f %4.2f\n", position.x, position.y, angle);
+        if (position.y < 0.02)
+            body->ApplyLinearImpulseToCenter(b2Vec2(0, 5.0f), true);
         sprite2.Position(glm::vec3(1, position.y, 0));
 
-        static float f = 0.0f;
-        static int counter = 0;
         ImGui::Begin("FPS Checker.");
         ImGui::Text("Application average %.3f ms/frame (%.1f FPS)", 1000.0f / ImGui::GetIO().Framerate, ImGui::GetIO().Framerate);
         ImGui::End();
