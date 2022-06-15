@@ -1,0 +1,22 @@
+[
+{
+  "directory": "C:/Users/GSCrohdea/Desktop/3D_engine/build",
+  "command": "C:\\msys64\\mingw64\\bin\\g++.exe -IC:/Users/GSCrohdea/Desktop/3D_engine/include -IC:/Users/GSCrohdea/Desktop/3D_engine/src/Buffers -IC:/Users/GSCrohdea/Desktop/3D_engine/src/Graphics -IC:/Users/GSCrohdea/Desktop/3D_engine/src/Utils -g -o CMakeFiles\\engine.dir\\main.cpp.obj -c C:\\Users\\GSCrohdea\\Desktop\\3D_engine\\main.cpp",
+  "file": "C:\\Users\\GSCrohdea\\Desktop\\3D_engine\\main.cpp"
+},
+{
+  "directory": "C:/Users/GSCrohdea/Desktop/3D_engine/build",
+  "command": "C:\\msys64\\mingw64\\bin\\g++.exe -IC:/Users/GSCrohdea/Desktop/3D_engine/include -IC:/Users/GSCrohdea/Desktop/3D_engine/src/Buffers -IC:/Users/GSCrohdea/Desktop/3D_engine/src/Graphics -IC:/Users/GSCrohdea/Desktop/3D_engine/src/Utils -g -o CMakeFiles\\engine.dir\\src\\Graphics\\window.cpp.obj -c C:\\Users\\GSCrohdea\\Desktop\\3D_engine\\src\\Graphics\\window.cpp",
+  "file": "C:\\Users\\GSCrohdea\\Desktop\\3D_engine\\src\\Graphics\\window.cpp"
+},
+{
+  "directory": "C:/Users/GSCrohdea/Desktop/3D_engine/build",
+  "command": "C:\\msys64\\mingw64\\bin\\g++.exe -IC:/Users/GSCrohdea/Desktop/3D_engine/include -IC:/Users/GSCrohdea/Desktop/3D_engine/src/Buffers -IC:/Users/GSCrohdea/Desktop/3D_engine/src/Graphics -IC:/Users/GSCrohdea/Desktop/3D_engine/src/Utils -g -o CMakeFiles\\engine.dir\\src\\Utils\\camera.cpp.obj -c C:\\Users\\GSCrohdea\\Desktop\\3D_engine\\src\\Utils\\camera.cpp",
+  "file": "C:\\Users\\GSCrohdea\\Desktop\\3D_engine\\src\\Utils\\camera.cpp"
+},
+{
+  "directory": "C:/Users/GSCrohdea/Desktop/3D_engine/build",
+  "command": "C:\\msys64\\mingw64\\bin\\windres.exe -O coff -I C:/Users/GSCrohdea/Desktop/3D_engine/include -I C:/Users/GSCrohdea/Desktop/3D_engine/src/Buffers -I C:/Users/GSCrohdea/Desktop/3D_engine/src/Graphics -I C:/Users/GSCrohdea/Desktop/3D_engine/src/Utils C:\\Users\\GSCrohdea\\Desktop\\3D_engine\\bin\\engine.rc CMakeFiles\\engine.dir\\bin\\engine.rc.obj",
+  "file": "C:\\Users\\GSCrohdea\\Desktop\\3D_engine\\bin\\engine.rc"
+}
+]

@@ -6,6 +6,10 @@
 #include <imgui/imgui.hpp>
 #include <imgui/imgui_impl_glfw.hpp>
 #include <imgui/imgui_impl_opengl3.hpp>
+#include <box2d/b2_fixture.h>
+#include <box2d/b2_polygon_shape.h>
+#include <box2d/b2_body.h>
+#include <box2d/b2_world.h>
 
 #include <iostream>
 

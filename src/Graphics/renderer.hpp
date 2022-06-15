@@ -58,6 +58,7 @@ namespace Graphics {
 
 	inline Shader& getShader() const { return shader; }
 
+	void Position(glm::vec3 Pos) { pos = Pos; }
 	inline const glm::vec3& getPosition() const { return pos; }
 	inline const glm::vec2& getSize() const { return size; }
 	inline const glm::vec4& getColor() const { return color; }
