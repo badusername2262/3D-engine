@@ -58,7 +58,6 @@ namespace Graphics
 	        return false;
 	    }
 	    glfwMakeContextCurrent(window);
-        glfwSwapInterval(1);
         glfwSetWindowUserPointer(window, this);
         glfwSetWindowSizeCallback(window, window_resize);
         glfwSetKeyCallback(window, key_callback);
