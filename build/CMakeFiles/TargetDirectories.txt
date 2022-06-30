@@ -1,3 +1,0 @@
-/home/alexr/Desktop/3d-engine/build/CMakeFiles/engine.dir
-/home/alexr/Desktop/3d-engine/build/CMakeFiles/edit_cache.dir
-/home/alexr/Desktop/3d-engine/build/CMakeFiles/rebuild_cache.dir
