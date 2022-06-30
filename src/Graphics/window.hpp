@@ -26,7 +26,7 @@ namespace Graphics {
         int width, height;
         GLFWwindow* window;
         bool  closed;
-    
+
         static bool Keys[MAX_KEYS];
         static bool mouseButtons[MAX_BUTTONS];
         static double mx, my;
@@ -36,7 +36,7 @@ namespace Graphics {
         void Clear() const;
         bool Closed() const;
         void Update();
-    
+
         inline int getWidth() const { return width; }
         inline int getHeight() const { return height; }
 

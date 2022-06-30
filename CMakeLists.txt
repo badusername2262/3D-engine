@@ -9,7 +9,7 @@ link_directories(${CMAKE_SOURCE_DIR}/lib)
 
 find_package(OpenGL REQUIRED)
 
-set(LIBS glfw3 OpenGL GLEW box2d)
+set(LIBS glfw3 OpenGL GL box2d)
 
 set(Engine_HEADERS src/Buffers/
                    src/Graphics/
@@ -17,7 +17,7 @@ set(Engine_HEADERS src/Buffers/
 
 set(ImGui_sources include/imgui/imgui.cpp include/imgui/imgui_demo.cpp include/imgui/imgui_draw.cpp include/imgui/imgui_impl_glfw.cpp include/imgui/imgui_impl_opengl3.cpp include/imgui/imgui_tables.cpp include/imgui/imgui_widgets.cpp)
 
-set(Engine_SOURCES main.cpp src/Graphics/window.cpp src/Utils/camera.cpp)
+set(Engine_SOURCES lib/glew.c main.cpp src/Graphics/window.cpp src/Utils/camera.cpp)
 
 add_executable(engine ${Engine_SOURCES} ${ImGui_sources} bin/engine.rc)
 
