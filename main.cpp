@@ -76,7 +76,7 @@ int main()
     while (!window.Closed())
     {
         window.Clear();
-        
+
         //stuff to calculate delta time for the fixed update
         nowTime = glfwGetTime();
         deltaTime += (nowTime - lastTime) / limitFPS;
@@ -86,7 +86,7 @@ int main()
         ImGui_ImplOpenGL3_NewFrame();
         ImGui_ImplGlfw_NewFrame();
         ImGui::NewFrame();
-        
+
         //checks is the key TAB was pressed if so freeze the moving object
         if (window.isKeyPressed(GLFW_KEY_TAB)){
             body->SetEnabled(0);
@@ -97,7 +97,7 @@ int main()
         //for mouse positioning
         double x, y;
         window.getmouseposition(x, y);
-        
+
         //foe the bright light
         shader.setUniform2f("light_pos", glm::vec2(3, 5.5));
 
@@ -120,10 +120,10 @@ int main()
             world.Step(limitFPS, velocityIterations, positionIterations);
             b2Vec2 position = body->GetPosition();
             glm::float32 angle = body->GetAngle();
-            if (position.y <= 0.02)
+            if (body->GetLinearVelocity().y == 0)
                 body->ApplyLinearImpulseToCenter(b2Vec2(0, 60.0f), true);
             sprite2.Position(glm::vec3(1, position.y, 0));
-            
+
             updates++;
             deltaTime--;
         }
@@ -138,7 +138,7 @@ int main()
             timer ++;
             std::cout << "FPS: " << frames << " Updates:" << updates << std::endl;
             updates = 0, frames = 0;
-        }    
+        }
     }
     //when the application closes it deletes all instances of its self to free up computer resources
     ImGui_ImplOpenGL3_Shutdown();

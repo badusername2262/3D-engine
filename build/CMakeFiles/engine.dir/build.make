@@ -73,141 +73,141 @@ CMakeFiles/engine.dir/main.cpp.o: CMakeFiles/engine.dir/flags.make
 CMakeFiles/engine.dir/main.cpp.o: ../main.cpp
 CMakeFiles/engine.dir/main.cpp.o: CMakeFiles/engine.dir/compiler_depend.ts
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/alexr/Desktop/3d-engine/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/engine.dir/main.cpp.o"
-	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/engine.dir/main.cpp.o -MF CMakeFiles/engine.dir/main.cpp.o.d -o CMakeFiles/engine.dir/main.cpp.o -c /home/alexr/Desktop/3d-engine/main.cpp
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/engine.dir/main.cpp.o -MF CMakeFiles/engine.dir/main.cpp.o.d -o CMakeFiles/engine.dir/main.cpp.o -c /home/alexr/Desktop/3d-engine/main.cpp
 
 CMakeFiles/engine.dir/main.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/engine.dir/main.cpp.i"
-	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/alexr/Desktop/3d-engine/main.cpp > CMakeFiles/engine.dir/main.cpp.i
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/alexr/Desktop/3d-engine/main.cpp > CMakeFiles/engine.dir/main.cpp.i
 
 CMakeFiles/engine.dir/main.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/engine.dir/main.cpp.s"
-	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/alexr/Desktop/3d-engine/main.cpp -o CMakeFiles/engine.dir/main.cpp.s
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/alexr/Desktop/3d-engine/main.cpp -o CMakeFiles/engine.dir/main.cpp.s
 
 CMakeFiles/engine.dir/src/Graphics/window.cpp.o: CMakeFiles/engine.dir/flags.make
 CMakeFiles/engine.dir/src/Graphics/window.cpp.o: ../src/Graphics/window.cpp
 CMakeFiles/engine.dir/src/Graphics/window.cpp.o: CMakeFiles/engine.dir/compiler_depend.ts
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/alexr/Desktop/3d-engine/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CMakeFiles/engine.dir/src/Graphics/window.cpp.o"
-	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/engine.dir/src/Graphics/window.cpp.o -MF CMakeFiles/engine.dir/src/Graphics/window.cpp.o.d -o CMakeFiles/engine.dir/src/Graphics/window.cpp.o -c /home/alexr/Desktop/3d-engine/src/Graphics/window.cpp
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/engine.dir/src/Graphics/window.cpp.o -MF CMakeFiles/engine.dir/src/Graphics/window.cpp.o.d -o CMakeFiles/engine.dir/src/Graphics/window.cpp.o -c /home/alexr/Desktop/3d-engine/src/Graphics/window.cpp
 
 CMakeFiles/engine.dir/src/Graphics/window.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/engine.dir/src/Graphics/window.cpp.i"
-	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/alexr/Desktop/3d-engine/src/Graphics/window.cpp > CMakeFiles/engine.dir/src/Graphics/window.cpp.i
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/alexr/Desktop/3d-engine/src/Graphics/window.cpp > CMakeFiles/engine.dir/src/Graphics/window.cpp.i
 
 CMakeFiles/engine.dir/src/Graphics/window.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/engine.dir/src/Graphics/window.cpp.s"
-	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/alexr/Desktop/3d-engine/src/Graphics/window.cpp -o CMakeFiles/engine.dir/src/Graphics/window.cpp.s
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/alexr/Desktop/3d-engine/src/Graphics/window.cpp -o CMakeFiles/engine.dir/src/Graphics/window.cpp.s
 
 CMakeFiles/engine.dir/src/Utils/camera.cpp.o: CMakeFiles/engine.dir/flags.make
 CMakeFiles/engine.dir/src/Utils/camera.cpp.o: ../src/Utils/camera.cpp
 CMakeFiles/engine.dir/src/Utils/camera.cpp.o: CMakeFiles/engine.dir/compiler_depend.ts
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/alexr/Desktop/3d-engine/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object CMakeFiles/engine.dir/src/Utils/camera.cpp.o"
-	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/engine.dir/src/Utils/camera.cpp.o -MF CMakeFiles/engine.dir/src/Utils/camera.cpp.o.d -o CMakeFiles/engine.dir/src/Utils/camera.cpp.o -c /home/alexr/Desktop/3d-engine/src/Utils/camera.cpp
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/engine.dir/src/Utils/camera.cpp.o -MF CMakeFiles/engine.dir/src/Utils/camera.cpp.o.d -o CMakeFiles/engine.dir/src/Utils/camera.cpp.o -c /home/alexr/Desktop/3d-engine/src/Utils/camera.cpp
 
 CMakeFiles/engine.dir/src/Utils/camera.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/engine.dir/src/Utils/camera.cpp.i"
-	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/alexr/Desktop/3d-engine/src/Utils/camera.cpp > CMakeFiles/engine.dir/src/Utils/camera.cpp.i
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/alexr/Desktop/3d-engine/src/Utils/camera.cpp > CMakeFiles/engine.dir/src/Utils/camera.cpp.i
 
 CMakeFiles/engine.dir/src/Utils/camera.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/engine.dir/src/Utils/camera.cpp.s"
-	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/alexr/Desktop/3d-engine/src/Utils/camera.cpp -o CMakeFiles/engine.dir/src/Utils/camera.cpp.s
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/alexr/Desktop/3d-engine/src/Utils/camera.cpp -o CMakeFiles/engine.dir/src/Utils/camera.cpp.s
 
 CMakeFiles/engine.dir/include/imgui/imgui.cpp.o: CMakeFiles/engine.dir/flags.make
 CMakeFiles/engine.dir/include/imgui/imgui.cpp.o: ../include/imgui/imgui.cpp
 CMakeFiles/engine.dir/include/imgui/imgui.cpp.o: CMakeFiles/engine.dir/compiler_depend.ts
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/alexr/Desktop/3d-engine/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building CXX object CMakeFiles/engine.dir/include/imgui/imgui.cpp.o"
-	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/engine.dir/include/imgui/imgui.cpp.o -MF CMakeFiles/engine.dir/include/imgui/imgui.cpp.o.d -o CMakeFiles/engine.dir/include/imgui/imgui.cpp.o -c /home/alexr/Desktop/3d-engine/include/imgui/imgui.cpp
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/engine.dir/include/imgui/imgui.cpp.o -MF CMakeFiles/engine.dir/include/imgui/imgui.cpp.o.d -o CMakeFiles/engine.dir/include/imgui/imgui.cpp.o -c /home/alexr/Desktop/3d-engine/include/imgui/imgui.cpp
 
 CMakeFiles/engine.dir/include/imgui/imgui.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/engine.dir/include/imgui/imgui.cpp.i"
-	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/alexr/Desktop/3d-engine/include/imgui/imgui.cpp > CMakeFiles/engine.dir/include/imgui/imgui.cpp.i
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/alexr/Desktop/3d-engine/include/imgui/imgui.cpp > CMakeFiles/engine.dir/include/imgui/imgui.cpp.i
 
 CMakeFiles/engine.dir/include/imgui/imgui.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/engine.dir/include/imgui/imgui.cpp.s"
-	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/alexr/Desktop/3d-engine/include/imgui/imgui.cpp -o CMakeFiles/engine.dir/include/imgui/imgui.cpp.s
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/alexr/Desktop/3d-engine/include/imgui/imgui.cpp -o CMakeFiles/engine.dir/include/imgui/imgui.cpp.s
 
 CMakeFiles/engine.dir/include/imgui/imgui_demo.cpp.o: CMakeFiles/engine.dir/flags.make
 CMakeFiles/engine.dir/include/imgui/imgui_demo.cpp.o: ../include/imgui/imgui_demo.cpp
 CMakeFiles/engine.dir/include/imgui/imgui_demo.cpp.o: CMakeFiles/engine.dir/compiler_depend.ts
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/alexr/Desktop/3d-engine/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Building CXX object CMakeFiles/engine.dir/include/imgui/imgui_demo.cpp.o"
-	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/engine.dir/include/imgui/imgui_demo.cpp.o -MF CMakeFiles/engine.dir/include/imgui/imgui_demo.cpp.o.d -o CMakeFiles/engine.dir/include/imgui/imgui_demo.cpp.o -c /home/alexr/Desktop/3d-engine/include/imgui/imgui_demo.cpp
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/engine.dir/include/imgui/imgui_demo.cpp.o -MF CMakeFiles/engine.dir/include/imgui/imgui_demo.cpp.o.d -o CMakeFiles/engine.dir/include/imgui/imgui_demo.cpp.o -c /home/alexr/Desktop/3d-engine/include/imgui/imgui_demo.cpp
 
 CMakeFiles/engine.dir/include/imgui/imgui_demo.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/engine.dir/include/imgui/imgui_demo.cpp.i"
-	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/alexr/Desktop/3d-engine/include/imgui/imgui_demo.cpp > CMakeFiles/engine.dir/include/imgui/imgui_demo.cpp.i
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/alexr/Desktop/3d-engine/include/imgui/imgui_demo.cpp > CMakeFiles/engine.dir/include/imgui/imgui_demo.cpp.i
 
 CMakeFiles/engine.dir/include/imgui/imgui_demo.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/engine.dir/include/imgui/imgui_demo.cpp.s"
-	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/alexr/Desktop/3d-engine/include/imgui/imgui_demo.cpp -o CMakeFiles/engine.dir/include/imgui/imgui_demo.cpp.s
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/alexr/Desktop/3d-engine/include/imgui/imgui_demo.cpp -o CMakeFiles/engine.dir/include/imgui/imgui_demo.cpp.s
 
 CMakeFiles/engine.dir/include/imgui/imgui_draw.cpp.o: CMakeFiles/engine.dir/flags.make
 CMakeFiles/engine.dir/include/imgui/imgui_draw.cpp.o: ../include/imgui/imgui_draw.cpp
 CMakeFiles/engine.dir/include/imgui/imgui_draw.cpp.o: CMakeFiles/engine.dir/compiler_depend.ts
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/alexr/Desktop/3d-engine/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Building CXX object CMakeFiles/engine.dir/include/imgui/imgui_draw.cpp.o"
-	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/engine.dir/include/imgui/imgui_draw.cpp.o -MF CMakeFiles/engine.dir/include/imgui/imgui_draw.cpp.o.d -o CMakeFiles/engine.dir/include/imgui/imgui_draw.cpp.o -c /home/alexr/Desktop/3d-engine/include/imgui/imgui_draw.cpp
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/engine.dir/include/imgui/imgui_draw.cpp.o -MF CMakeFiles/engine.dir/include/imgui/imgui_draw.cpp.o.d -o CMakeFiles/engine.dir/include/imgui/imgui_draw.cpp.o -c /home/alexr/Desktop/3d-engine/include/imgui/imgui_draw.cpp
 
 CMakeFiles/engine.dir/include/imgui/imgui_draw.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/engine.dir/include/imgui/imgui_draw.cpp.i"
-	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/alexr/Desktop/3d-engine/include/imgui/imgui_draw.cpp > CMakeFiles/engine.dir/include/imgui/imgui_draw.cpp.i
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/alexr/Desktop/3d-engine/include/imgui/imgui_draw.cpp > CMakeFiles/engine.dir/include/imgui/imgui_draw.cpp.i
 
 CMakeFiles/engine.dir/include/imgui/imgui_draw.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/engine.dir/include/imgui/imgui_draw.cpp.s"
-	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/alexr/Desktop/3d-engine/include/imgui/imgui_draw.cpp -o CMakeFiles/engine.dir/include/imgui/imgui_draw.cpp.s
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/alexr/Desktop/3d-engine/include/imgui/imgui_draw.cpp -o CMakeFiles/engine.dir/include/imgui/imgui_draw.cpp.s
 
 CMakeFiles/engine.dir/include/imgui/imgui_impl_glfw.cpp.o: CMakeFiles/engine.dir/flags.make
 CMakeFiles/engine.dir/include/imgui/imgui_impl_glfw.cpp.o: ../include/imgui/imgui_impl_glfw.cpp
 CMakeFiles/engine.dir/include/imgui/imgui_impl_glfw.cpp.o: CMakeFiles/engine.dir/compiler_depend.ts
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/alexr/Desktop/3d-engine/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_7) "Building CXX object CMakeFiles/engine.dir/include/imgui/imgui_impl_glfw.cpp.o"
-	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/engine.dir/include/imgui/imgui_impl_glfw.cpp.o -MF CMakeFiles/engine.dir/include/imgui/imgui_impl_glfw.cpp.o.d -o CMakeFiles/engine.dir/include/imgui/imgui_impl_glfw.cpp.o -c /home/alexr/Desktop/3d-engine/include/imgui/imgui_impl_glfw.cpp
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/engine.dir/include/imgui/imgui_impl_glfw.cpp.o -MF CMakeFiles/engine.dir/include/imgui/imgui_impl_glfw.cpp.o.d -o CMakeFiles/engine.dir/include/imgui/imgui_impl_glfw.cpp.o -c /home/alexr/Desktop/3d-engine/include/imgui/imgui_impl_glfw.cpp
 
 CMakeFiles/engine.dir/include/imgui/imgui_impl_glfw.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/engine.dir/include/imgui/imgui_impl_glfw.cpp.i"
-	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/alexr/Desktop/3d-engine/include/imgui/imgui_impl_glfw.cpp > CMakeFiles/engine.dir/include/imgui/imgui_impl_glfw.cpp.i
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/alexr/Desktop/3d-engine/include/imgui/imgui_impl_glfw.cpp > CMakeFiles/engine.dir/include/imgui/imgui_impl_glfw.cpp.i
 
 CMakeFiles/engine.dir/include/imgui/imgui_impl_glfw.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/engine.dir/include/imgui/imgui_impl_glfw.cpp.s"
-	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/alexr/Desktop/3d-engine/include/imgui/imgui_impl_glfw.cpp -o CMakeFiles/engine.dir/include/imgui/imgui_impl_glfw.cpp.s
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/alexr/Desktop/3d-engine/include/imgui/imgui_impl_glfw.cpp -o CMakeFiles/engine.dir/include/imgui/imgui_impl_glfw.cpp.s
 
 CMakeFiles/engine.dir/include/imgui/imgui_impl_opengl3.cpp.o: CMakeFiles/engine.dir/flags.make
 CMakeFiles/engine.dir/include/imgui/imgui_impl_opengl3.cpp.o: ../include/imgui/imgui_impl_opengl3.cpp
 CMakeFiles/engine.dir/include/imgui/imgui_impl_opengl3.cpp.o: CMakeFiles/engine.dir/compiler_depend.ts
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/alexr/Desktop/3d-engine/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_8) "Building CXX object CMakeFiles/engine.dir/include/imgui/imgui_impl_opengl3.cpp.o"
-	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/engine.dir/include/imgui/imgui_impl_opengl3.cpp.o -MF CMakeFiles/engine.dir/include/imgui/imgui_impl_opengl3.cpp.o.d -o CMakeFiles/engine.dir/include/imgui/imgui_impl_opengl3.cpp.o -c /home/alexr/Desktop/3d-engine/include/imgui/imgui_impl_opengl3.cpp
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/engine.dir/include/imgui/imgui_impl_opengl3.cpp.o -MF CMakeFiles/engine.dir/include/imgui/imgui_impl_opengl3.cpp.o.d -o CMakeFiles/engine.dir/include/imgui/imgui_impl_opengl3.cpp.o -c /home/alexr/Desktop/3d-engine/include/imgui/imgui_impl_opengl3.cpp
 
 CMakeFiles/engine.dir/include/imgui/imgui_impl_opengl3.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/engine.dir/include/imgui/imgui_impl_opengl3.cpp.i"
-	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/alexr/Desktop/3d-engine/include/imgui/imgui_impl_opengl3.cpp > CMakeFiles/engine.dir/include/imgui/imgui_impl_opengl3.cpp.i
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/alexr/Desktop/3d-engine/include/imgui/imgui_impl_opengl3.cpp > CMakeFiles/engine.dir/include/imgui/imgui_impl_opengl3.cpp.i
 
 CMakeFiles/engine.dir/include/imgui/imgui_impl_opengl3.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/engine.dir/include/imgui/imgui_impl_opengl3.cpp.s"
-	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/alexr/Desktop/3d-engine/include/imgui/imgui_impl_opengl3.cpp -o CMakeFiles/engine.dir/include/imgui/imgui_impl_opengl3.cpp.s
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/alexr/Desktop/3d-engine/include/imgui/imgui_impl_opengl3.cpp -o CMakeFiles/engine.dir/include/imgui/imgui_impl_opengl3.cpp.s
 
 CMakeFiles/engine.dir/include/imgui/imgui_tables.cpp.o: CMakeFiles/engine.dir/flags.make
 CMakeFiles/engine.dir/include/imgui/imgui_tables.cpp.o: ../include/imgui/imgui_tables.cpp
 CMakeFiles/engine.dir/include/imgui/imgui_tables.cpp.o: CMakeFiles/engine.dir/compiler_depend.ts
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/alexr/Desktop/3d-engine/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_9) "Building CXX object CMakeFiles/engine.dir/include/imgui/imgui_tables.cpp.o"
-	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/engine.dir/include/imgui/imgui_tables.cpp.o -MF CMakeFiles/engine.dir/include/imgui/imgui_tables.cpp.o.d -o CMakeFiles/engine.dir/include/imgui/imgui_tables.cpp.o -c /home/alexr/Desktop/3d-engine/include/imgui/imgui_tables.cpp
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/engine.dir/include/imgui/imgui_tables.cpp.o -MF CMakeFiles/engine.dir/include/imgui/imgui_tables.cpp.o.d -o CMakeFiles/engine.dir/include/imgui/imgui_tables.cpp.o -c /home/alexr/Desktop/3d-engine/include/imgui/imgui_tables.cpp
 
 CMakeFiles/engine.dir/include/imgui/imgui_tables.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/engine.dir/include/imgui/imgui_tables.cpp.i"
-	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/alexr/Desktop/3d-engine/include/imgui/imgui_tables.cpp > CMakeFiles/engine.dir/include/imgui/imgui_tables.cpp.i
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/alexr/Desktop/3d-engine/include/imgui/imgui_tables.cpp > CMakeFiles/engine.dir/include/imgui/imgui_tables.cpp.i
 
 CMakeFiles/engine.dir/include/imgui/imgui_tables.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/engine.dir/include/imgui/imgui_tables.cpp.s"
-	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/alexr/Desktop/3d-engine/include/imgui/imgui_tables.cpp -o CMakeFiles/engine.dir/include/imgui/imgui_tables.cpp.s
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/alexr/Desktop/3d-engine/include/imgui/imgui_tables.cpp -o CMakeFiles/engine.dir/include/imgui/imgui_tables.cpp.s
 
 CMakeFiles/engine.dir/include/imgui/imgui_widgets.cpp.o: CMakeFiles/engine.dir/flags.make
 CMakeFiles/engine.dir/include/imgui/imgui_widgets.cpp.o: ../include/imgui/imgui_widgets.cpp
 CMakeFiles/engine.dir/include/imgui/imgui_widgets.cpp.o: CMakeFiles/engine.dir/compiler_depend.ts
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/alexr/Desktop/3d-engine/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_10) "Building CXX object CMakeFiles/engine.dir/include/imgui/imgui_widgets.cpp.o"
-	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/engine.dir/include/imgui/imgui_widgets.cpp.o -MF CMakeFiles/engine.dir/include/imgui/imgui_widgets.cpp.o.d -o CMakeFiles/engine.dir/include/imgui/imgui_widgets.cpp.o -c /home/alexr/Desktop/3d-engine/include/imgui/imgui_widgets.cpp
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/engine.dir/include/imgui/imgui_widgets.cpp.o -MF CMakeFiles/engine.dir/include/imgui/imgui_widgets.cpp.o.d -o CMakeFiles/engine.dir/include/imgui/imgui_widgets.cpp.o -c /home/alexr/Desktop/3d-engine/include/imgui/imgui_widgets.cpp
 
 CMakeFiles/engine.dir/include/imgui/imgui_widgets.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/engine.dir/include/imgui/imgui_widgets.cpp.i"
-	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/alexr/Desktop/3d-engine/include/imgui/imgui_widgets.cpp > CMakeFiles/engine.dir/include/imgui/imgui_widgets.cpp.i
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/alexr/Desktop/3d-engine/include/imgui/imgui_widgets.cpp > CMakeFiles/engine.dir/include/imgui/imgui_widgets.cpp.i
 
 CMakeFiles/engine.dir/include/imgui/imgui_widgets.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/engine.dir/include/imgui/imgui_widgets.cpp.s"
-	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/alexr/Desktop/3d-engine/include/imgui/imgui_widgets.cpp -o CMakeFiles/engine.dir/include/imgui/imgui_widgets.cpp.s
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/alexr/Desktop/3d-engine/include/imgui/imgui_widgets.cpp -o CMakeFiles/engine.dir/include/imgui/imgui_widgets.cpp.s
 
 # Object files for target engine
 engine_OBJECTS = \
