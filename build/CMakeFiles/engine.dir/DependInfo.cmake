@@ -4,26 +4,20 @@ set(CMAKE_DEPENDS_IN_PROJECT_ONLY OFF)
 
 # The set of languages for which implicit dependencies are needed:
 set(CMAKE_DEPENDS_LANGUAGES
-  "RC"
-  )
-# The set of files for implicit dependencies of each language:
-set(CMAKE_DEPENDS_CHECK_RC
-  "C:/Users/alexr/Desktop/3D-Engine/bin/engine.rc" "C:/Users/alexr/Desktop/3D-Engine/build/CMakeFiles/engine.dir/bin/engine.rc.obj"
-  )
-
-# The include file search paths:
-set(CMAKE_RC_TARGET_INCLUDE_PATH
-  "../include"
-  "../src/Buffers"
-  "../src/Graphics"
-  "../src/Utils"
   )
 
 # The set of dependency files which are needed:
 set(CMAKE_DEPENDS_DEPENDENCY_FILES
-  "C:/Users/alexr/Desktop/3D-Engine/main.cpp" "CMakeFiles/engine.dir/main.cpp.obj" "gcc" "CMakeFiles/engine.dir/main.cpp.obj.d"
-  "C:/Users/alexr/Desktop/3D-Engine/src/Graphics/window.cpp" "CMakeFiles/engine.dir/src/Graphics/window.cpp.obj" "gcc" "CMakeFiles/engine.dir/src/Graphics/window.cpp.obj.d"
-  "C:/Users/alexr/Desktop/3D-Engine/src/Utils/camera.cpp" "CMakeFiles/engine.dir/src/Utils/camera.cpp.obj" "gcc" "CMakeFiles/engine.dir/src/Utils/camera.cpp.obj.d"
+  "/home/alexr/Desktop/3d-engine/include/imgui/imgui.cpp" "CMakeFiles/engine.dir/include/imgui/imgui.cpp.o" "gcc" "CMakeFiles/engine.dir/include/imgui/imgui.cpp.o.d"
+  "/home/alexr/Desktop/3d-engine/include/imgui/imgui_demo.cpp" "CMakeFiles/engine.dir/include/imgui/imgui_demo.cpp.o" "gcc" "CMakeFiles/engine.dir/include/imgui/imgui_demo.cpp.o.d"
+  "/home/alexr/Desktop/3d-engine/include/imgui/imgui_draw.cpp" "CMakeFiles/engine.dir/include/imgui/imgui_draw.cpp.o" "gcc" "CMakeFiles/engine.dir/include/imgui/imgui_draw.cpp.o.d"
+  "/home/alexr/Desktop/3d-engine/include/imgui/imgui_impl_glfw.cpp" "CMakeFiles/engine.dir/include/imgui/imgui_impl_glfw.cpp.o" "gcc" "CMakeFiles/engine.dir/include/imgui/imgui_impl_glfw.cpp.o.d"
+  "/home/alexr/Desktop/3d-engine/include/imgui/imgui_impl_opengl3.cpp" "CMakeFiles/engine.dir/include/imgui/imgui_impl_opengl3.cpp.o" "gcc" "CMakeFiles/engine.dir/include/imgui/imgui_impl_opengl3.cpp.o.d"
+  "/home/alexr/Desktop/3d-engine/include/imgui/imgui_tables.cpp" "CMakeFiles/engine.dir/include/imgui/imgui_tables.cpp.o" "gcc" "CMakeFiles/engine.dir/include/imgui/imgui_tables.cpp.o.d"
+  "/home/alexr/Desktop/3d-engine/include/imgui/imgui_widgets.cpp" "CMakeFiles/engine.dir/include/imgui/imgui_widgets.cpp.o" "gcc" "CMakeFiles/engine.dir/include/imgui/imgui_widgets.cpp.o.d"
+  "/home/alexr/Desktop/3d-engine/main.cpp" "CMakeFiles/engine.dir/main.cpp.o" "gcc" "CMakeFiles/engine.dir/main.cpp.o.d"
+  "/home/alexr/Desktop/3d-engine/src/Graphics/window.cpp" "CMakeFiles/engine.dir/src/Graphics/window.cpp.o" "gcc" "CMakeFiles/engine.dir/src/Graphics/window.cpp.o.d"
+  "/home/alexr/Desktop/3d-engine/src/Utils/camera.cpp" "CMakeFiles/engine.dir/src/Utils/camera.cpp.o" "gcc" "CMakeFiles/engine.dir/src/Utils/camera.cpp.o.d"
   )
 
 # Targets to which this target links.

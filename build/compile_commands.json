@@ -1,17 +1,52 @@
 [
 {
-  "directory": "C:/Users/alexr/Desktop/3D-Engine/build",
-  "command": "C:\\msys64\\mingw64\\bin\\g++.exe  @CMakeFiles/engine.dir/includes_CXX.rsp -g -o CMakeFiles\\engine.dir\\main.cpp.obj -c C:\\Users\\alexr\\Desktop\\3D-Engine\\main.cpp",
-  "file": "C:/Users/alexr/Desktop/3D-Engine/main.cpp"
+  "directory": "/home/alexr/Desktop/3d-engine/build",
+  "command": "/usr/bin/g++  -I/home/alexr/Desktop/3d-engine/include -I/home/alexr/Desktop/3d-engine/src/Buffers -I/home/alexr/Desktop/3d-engine/src/Graphics -I/home/alexr/Desktop/3d-engine/src/Utils -O3 -DNDEBUG -o CMakeFiles/engine.dir/main.cpp.o -c /home/alexr/Desktop/3d-engine/main.cpp",
+  "file": "/home/alexr/Desktop/3d-engine/main.cpp"
 },
 {
-  "directory": "C:/Users/alexr/Desktop/3D-Engine/build",
-  "command": "C:\\msys64\\mingw64\\bin\\g++.exe  @CMakeFiles/engine.dir/includes_CXX.rsp -g -o CMakeFiles\\engine.dir\\src\\Graphics\\window.cpp.obj -c C:\\Users\\alexr\\Desktop\\3D-Engine\\src\\Graphics\\window.cpp",
-  "file": "C:/Users/alexr/Desktop/3D-Engine/src/Graphics/window.cpp"
+  "directory": "/home/alexr/Desktop/3d-engine/build",
+  "command": "/usr/bin/g++  -I/home/alexr/Desktop/3d-engine/include -I/home/alexr/Desktop/3d-engine/src/Buffers -I/home/alexr/Desktop/3d-engine/src/Graphics -I/home/alexr/Desktop/3d-engine/src/Utils -O3 -DNDEBUG -o CMakeFiles/engine.dir/src/Graphics/window.cpp.o -c /home/alexr/Desktop/3d-engine/src/Graphics/window.cpp",
+  "file": "/home/alexr/Desktop/3d-engine/src/Graphics/window.cpp"
 },
 {
-  "directory": "C:/Users/alexr/Desktop/3D-Engine/build",
-  "command": "C:\\msys64\\mingw64\\bin\\g++.exe  @CMakeFiles/engine.dir/includes_CXX.rsp -g -o CMakeFiles\\engine.dir\\src\\Utils\\camera.cpp.obj -c C:\\Users\\alexr\\Desktop\\3D-Engine\\src\\Utils\\camera.cpp",
-  "file": "C:/Users/alexr/Desktop/3D-Engine/src/Utils/camera.cpp"
+  "directory": "/home/alexr/Desktop/3d-engine/build",
+  "command": "/usr/bin/g++  -I/home/alexr/Desktop/3d-engine/include -I/home/alexr/Desktop/3d-engine/src/Buffers -I/home/alexr/Desktop/3d-engine/src/Graphics -I/home/alexr/Desktop/3d-engine/src/Utils -O3 -DNDEBUG -o CMakeFiles/engine.dir/src/Utils/camera.cpp.o -c /home/alexr/Desktop/3d-engine/src/Utils/camera.cpp",
+  "file": "/home/alexr/Desktop/3d-engine/src/Utils/camera.cpp"
+},
+{
+  "directory": "/home/alexr/Desktop/3d-engine/build",
+  "command": "/usr/bin/g++  -I/home/alexr/Desktop/3d-engine/include -I/home/alexr/Desktop/3d-engine/src/Buffers -I/home/alexr/Desktop/3d-engine/src/Graphics -I/home/alexr/Desktop/3d-engine/src/Utils -O3 -DNDEBUG -o CMakeFiles/engine.dir/include/imgui/imgui.cpp.o -c /home/alexr/Desktop/3d-engine/include/imgui/imgui.cpp",
+  "file": "/home/alexr/Desktop/3d-engine/include/imgui/imgui.cpp"
+},
+{
+  "directory": "/home/alexr/Desktop/3d-engine/build",
+  "command": "/usr/bin/g++  -I/home/alexr/Desktop/3d-engine/include -I/home/alexr/Desktop/3d-engine/src/Buffers -I/home/alexr/Desktop/3d-engine/src/Graphics -I/home/alexr/Desktop/3d-engine/src/Utils -O3 -DNDEBUG -o CMakeFiles/engine.dir/include/imgui/imgui_demo.cpp.o -c /home/alexr/Desktop/3d-engine/include/imgui/imgui_demo.cpp",
+  "file": "/home/alexr/Desktop/3d-engine/include/imgui/imgui_demo.cpp"
+},
+{
+  "directory": "/home/alexr/Desktop/3d-engine/build",
+  "command": "/usr/bin/g++  -I/home/alexr/Desktop/3d-engine/include -I/home/alexr/Desktop/3d-engine/src/Buffers -I/home/alexr/Desktop/3d-engine/src/Graphics -I/home/alexr/Desktop/3d-engine/src/Utils -O3 -DNDEBUG -o CMakeFiles/engine.dir/include/imgui/imgui_draw.cpp.o -c /home/alexr/Desktop/3d-engine/include/imgui/imgui_draw.cpp",
+  "file": "/home/alexr/Desktop/3d-engine/include/imgui/imgui_draw.cpp"
+},
+{
+  "directory": "/home/alexr/Desktop/3d-engine/build",
+  "command": "/usr/bin/g++  -I/home/alexr/Desktop/3d-engine/include -I/home/alexr/Desktop/3d-engine/src/Buffers -I/home/alexr/Desktop/3d-engine/src/Graphics -I/home/alexr/Desktop/3d-engine/src/Utils -O3 -DNDEBUG -o CMakeFiles/engine.dir/include/imgui/imgui_impl_glfw.cpp.o -c /home/alexr/Desktop/3d-engine/include/imgui/imgui_impl_glfw.cpp",
+  "file": "/home/alexr/Desktop/3d-engine/include/imgui/imgui_impl_glfw.cpp"
+},
+{
+  "directory": "/home/alexr/Desktop/3d-engine/build",
+  "command": "/usr/bin/g++  -I/home/alexr/Desktop/3d-engine/include -I/home/alexr/Desktop/3d-engine/src/Buffers -I/home/alexr/Desktop/3d-engine/src/Graphics -I/home/alexr/Desktop/3d-engine/src/Utils -O3 -DNDEBUG -o CMakeFiles/engine.dir/include/imgui/imgui_impl_opengl3.cpp.o -c /home/alexr/Desktop/3d-engine/include/imgui/imgui_impl_opengl3.cpp",
+  "file": "/home/alexr/Desktop/3d-engine/include/imgui/imgui_impl_opengl3.cpp"
+},
+{
+  "directory": "/home/alexr/Desktop/3d-engine/build",
+  "command": "/usr/bin/g++  -I/home/alexr/Desktop/3d-engine/include -I/home/alexr/Desktop/3d-engine/src/Buffers -I/home/alexr/Desktop/3d-engine/src/Graphics -I/home/alexr/Desktop/3d-engine/src/Utils -O3 -DNDEBUG -o CMakeFiles/engine.dir/include/imgui/imgui_tables.cpp.o -c /home/alexr/Desktop/3d-engine/include/imgui/imgui_tables.cpp",
+  "file": "/home/alexr/Desktop/3d-engine/include/imgui/imgui_tables.cpp"
+},
+{
+  "directory": "/home/alexr/Desktop/3d-engine/build",
+  "command": "/usr/bin/g++  -I/home/alexr/Desktop/3d-engine/include -I/home/alexr/Desktop/3d-engine/src/Buffers -I/home/alexr/Desktop/3d-engine/src/Graphics -I/home/alexr/Desktop/3d-engine/src/Utils -O3 -DNDEBUG -o CMakeFiles/engine.dir/include/imgui/imgui_widgets.cpp.o -c /home/alexr/Desktop/3d-engine/include/imgui/imgui_widgets.cpp",
+  "file": "/home/alexr/Desktop/3d-engine/include/imgui/imgui_widgets.cpp"
 }
 ]

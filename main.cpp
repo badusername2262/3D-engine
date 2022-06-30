@@ -19,7 +19,7 @@ int main()
     glClearColor(0.2, 0.3, 0.8, 1.0);
 
     //making a ground plain for the rectangle to bounce off of
-    b2Vec2 gravity(0.0f, -0.1f);
+    b2Vec2 gravity(0.0f, -20.0f);
     b2World world(gravity);
     b2BodyDef groundBodyDef;
     groundBodyDef.position.Set(0.0f, -20.0f);
@@ -42,7 +42,6 @@ int main()
     body->CreateFixture(&fixtureDef);
 
     //variables for updating all physics in game
-    float timeStep = 1.0f/2.1f;
     int32 velocityIterations = 6;
     int32 positionIterations = 2;
 
@@ -69,7 +68,7 @@ int main()
     static int counter = 0;
 
     //values for the fixed update
-    static double limitFPS = 1.0 / 60.0;
+    static double limitFPS = 1.0 / 120.0;
     double lastTime = glfwGetTime(), timer = lastTime;
     double deltaTime = 0, nowTime = 0;
     int frames = 0 , updates = 0;
@@ -116,13 +115,13 @@ int main()
 		renderer.flush();
 
         //fixed update
-        while (deltaTime >= 1.0){
+        while (deltaTime >= limitFPS){
             //this is for the moving rectangle with physics
-            world.Step(timeStep, velocityIterations, positionIterations);
+            world.Step(limitFPS, velocityIterations, positionIterations);
             b2Vec2 position = body->GetPosition();
             glm::float32 angle = body->GetAngle();
-            if (body->GetLinearVelocity().y == 0)
-                body->ApplyLinearImpulseToCenter(b2Vec2(0, 5.0f), true);
+            if (position.y <= 0.02)
+                body->ApplyLinearImpulseToCenter(b2Vec2(0, 60.0f), true);
             sprite2.Position(glm::vec3(1, position.y, 0));
             
             updates++;
