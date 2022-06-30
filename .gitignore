@@ -1,4 +1,5 @@
 build/
 .cache/
 *.json
+bin/*.ini
 bin/engine
